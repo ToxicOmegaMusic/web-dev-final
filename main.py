@@ -1,15 +1,14 @@
-from flask import Flask
-from flask.templating import render_template
+from flask import Flask, session, redirect, url_for, render_template
 
 app = Flask(__name__)
 
 @app.route("/")
 def home():
-	return render_template("home.html")
+	return render_template("store.html")
 
-@app.route("/pgot")
-def other():
-	return "other page lol"
+@app.route("/cart")
+def cart():
+	return render_template("cart.html")
 
 if __name__ == "__main__":
 	app.run()

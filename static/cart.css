@@ -1,0 +1,22 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+h1 {
+	margin: 1em;
+	text-align: center;
+}
+
+#cart {
+	max-width: 65%;
+
+	margin: 0 auto;
+
+	border: 0.1em solid black;
+	list-style-type: square;
+	font-size: 1.6em;
+}
+
+#cart li {
+	text-decoration: underline;
+}
