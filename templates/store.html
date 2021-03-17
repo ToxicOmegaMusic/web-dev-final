@@ -4,14 +4,19 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="{{ url_for('static', filename = 'store.css') }}">
 	<title>My Store!</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename = 'store.css') }}">
+	<!-- <link rel="stylesheet" href="../static/store.css"> -->
+	<script src="{{ url_for('static', filename = 'stock.js') }}" defer></script>
+	<!-- <script src="../static/stock.js" defer></script> -->
+	<script src="{{ url_for('static', filename = 'store.js') }}" defer></script>
+	<!-- <script src="../static/store.js" defer></script> -->
 </head>
 <body>
 	<h1>My Amazing Super Shop!!!</h1>
-	<ul id="product-list"></ul>
-	<a href="{{ url_for('cart') }}"><div id="chkbtn" onclick="checkout()"><p>Proceed to Checkout (0)</p></div></a>
-
-	<script src="{{ url_for('static', filename = 'store.js') }}"></script>
+	<form method="post" action="{{ url_for('cart') }}" method="POST">
+		<ul id="product-list"></ul>
+		<input id="chkbtn" type="submit" value="Proceed to Checkout">
+	</form>
 </body>
 </html>

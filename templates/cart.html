@@ -4,16 +4,19 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="{{ url_for('static', filename = 'cart.css') }}">
-	<!-- <link rel="stylesheet" href="../../static/cart.css"> -->
-	<title>Cart</title>
+	<title>Document</title>
+	<script defer>result = JSON.parse('{{ result|tojson }}');</script>
+	<script src="{{ url_for('static', filename = 'stock.js') }}" defer></script>
+	<script src="{{ url_for('static', filename = 'cart.js') }}" defer></script>
 </head>
 <body>
-	<h1>Shopping Cart</h1>
-	<ul id="cart">
-
-	</ul>
-	<script src="{{ url_for('static', filename = 'cart.js') }}"></script>
-	<!-- <script src="../../static/cart.js"></script> -->
+	<table border="1">
+		{% for key, value in result.items() %}
+			<tr>
+				<th>{{ key }}</th>
+				<td>{{ value }}</td>
+			</tr>
+		{% endfor %}
+	</table>
 </body>
 </html>
