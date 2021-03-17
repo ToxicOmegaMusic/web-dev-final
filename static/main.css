@@ -1,10 +1,19 @@
 *, *::before, *::after {
 	box-sizing: border-box;
+	color: #08090A;
 }
 
 h1 {
 	margin: 1em;
 	text-align: center;
+}
+
+body {
+	/* background-color: #F4FAFF; */
+	background: linear-gradient(to bottom right, #F4FAFF, #6899b9);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	margin: 0;
 }
 
 #product-list {
@@ -16,12 +25,15 @@ h1 {
 	padding: 0;
 	list-style-type: none;
 	border: 0.1em black solid;
+	border-radius: 0.4em;
+	background-color: #d2e1e7;
 }
 
 #product-list li {
 	margin: 1em;
 	padding: 1em 1em 0 1em;
 	border: 0.1em black solid;
+	background-color: #f1fbff;
 }
 
 #product-list li div {
@@ -42,19 +54,24 @@ h1 {
 	user-select: none;
 	width: 13em;
 	height: 1.7em;
-
 	display: block;
 	margin: 1em auto;
-
 	font-size: 1.4em;
 	text-align: center;
-	color: white;
-	background-color: #ff1515;
+	color: #08090A;
+	background-color: #becdff;
 	border: 0.1em black solid;
-	border-radius: 0.6em;
+	border-radius: 0.2em;
 	transition: 0.2s ease-in-out;
 }
 
 #chkbtn:hover { 
-	background-color: #790000;
+	background-color: #04304d;
+	color: aliceblue;
+}
+
+@media (max-width: 920px) {
+	#product-list {
+		max-width: 90%;
+	}
 }
