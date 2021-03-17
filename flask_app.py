@@ -4,13 +4,13 @@ app = Flask(__name__)
 
 @app.route("/store/")
 def store():
-	return render_template("store.html")
+	return render_template("/storeapp/store.html")
 
 @app.route("/store/cart/", methods=["GET", "POST"])
 def cart():
 	if request.method == "POST":
 		result = request.form
-		return render_template("cart.html", result = result)
+		return render_template("/storeapp/cart.html", result = result)
 
 if __name__ == "__main__":
 	app.run(host='0.0.0.0', port=8000)

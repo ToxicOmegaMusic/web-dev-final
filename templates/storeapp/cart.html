@@ -6,8 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<script defer>result = JSON.parse('{{ result|tojson }}');</script>
-	<script src="{{ url_for('static', filename = 'stock.js') }}" defer></script>
-	<script src="{{ url_for('static', filename = 'cart.js') }}" defer></script>
+	<script src="{{ url_for('static', filename = 'storeapp/stock.js') }}" defer></script>
+	<script src="{{ url_for('static', filename = 'storeapp/cart.js') }}" defer></script>
 </head>
 <body>
 	<table border="1">
