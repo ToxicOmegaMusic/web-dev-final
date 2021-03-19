@@ -49,14 +49,9 @@ body {
 	text-align: right;
 }
 
-#chkbtn {
+#cartbtn, .rmvbtn, #ckbtn {	
 	cursor: pointer;
 	user-select: none;
-	width: 13em;
-	height: 1.7em;
-	display: block;
-	margin: 1em auto;
-	font-size: 1.4em;
 	text-align: center;
 	color: #08090A;
 	background-color: #becdff;
@@ -65,7 +60,15 @@ body {
 	transition: 0.2s ease-in-out;
 }
 
-#chkbtn:hover { 
+#cartbtn {
+	width: 13em;
+	height: 1.7em;
+	display: block;
+	margin: 1em auto;
+	font-size: 1.4em;
+}
+
+#cartbtn:hover, .rmvbtn:hover { 
 	background-color: #04304d;
 	color: aliceblue;
 }
@@ -74,4 +77,42 @@ body {
 	#product-list {
 		max-width: 90%;
 	}
+}
+
+#cartdom {
+	font-size: 1.4em;
+	max-width: 55%;
+	margin: 0 auto;
+	padding: 0;
+	list-style-type: none;
+	border: 0.1em black solid;
+	border-radius: 0.4em;
+	background-color: #d2e1e7;
+}
+
+#cartdom li {
+	display: flex;
+	margin: 1em 2em;
+	justify-content: space-between;
+}
+
+.rmvbtn {
+	width: 1.5em;
+}
+
+#totlli {
+	text-align: center;
+}
+
+#ckbtn {
+	font-size: 1.5em;
+	width: 5em;
+	margin: 1em auto;
+	padding: 0.5em;
+}
+
+a {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
 }

@@ -1,4 +1,4 @@
-from flask import Flask, request, redirect, url_for, render_template
+from flask import Flask, request, render_template, url_for
 
 app = Flask(__name__)
 
@@ -11,6 +11,10 @@ def cart():
 	if request.method == "POST":
 		result = request.form
 		return render_template("/storeapp/cart.html", result = result)
+
+@app.route("/thank-you/")
+def thx():
+	return "Thank you for shopping with us today :D"
 
 if __name__ == "__main__":
 	app.run(host='0.0.0.0', port=8000)
