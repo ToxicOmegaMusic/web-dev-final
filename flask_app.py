@@ -14,7 +14,7 @@ def cart():
 
 @app.route("/thank-you/")
 def thx():
-	return "Thank you for shopping with us today :D"
+	return render_template("/storeapp/thank-you.html")
 
 if __name__ == "__main__":
 	app.run(host='0.0.0.0', port=8000)
