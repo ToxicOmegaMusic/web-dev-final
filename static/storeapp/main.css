@@ -49,7 +49,7 @@ body {
 	text-align: right;
 }
 
-#cartbtn, .rmvbtn, #ckbtn {	
+#cartbtn, .rmvbtn, #ckbtn, #thxbtn {	
 	cursor: pointer;
 	user-select: none;
 	text-align: center;
@@ -68,7 +68,7 @@ body {
 	font-size: 1.4em;
 }
 
-#cartbtn:hover, .rmvbtn:hover { 
+#cartbtn:hover, .rmvbtn:hover, #thxbtn:hover { 
 	background-color: #04304d;
 	color: aliceblue;
 }
@@ -109,6 +109,17 @@ a {
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
+}
+
+#thxdom {
+	margin: 7em 0;
+}
+
+#thxbtn {
+	margin: 2em auto;
+	font-size: 1.3em;
+	width: 10em;
+	padding: 0.5em;
 }
 
 @media (max-width: 920px) {
