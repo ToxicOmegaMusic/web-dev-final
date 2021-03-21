@@ -9,7 +9,6 @@ h1 {
 }
 
 body {
-	/* background-color: #F4FAFF; */
 	background: linear-gradient(to bottom right, #F4FAFF, #6899b9);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -49,7 +48,7 @@ body {
 	text-align: right;
 }
 
-#cartbtn, .rmvbtn, #ckbtn, #thxbtn {	
+#cartbtn, .rmvbtn, #ckbtn, #thxbtn {
 	cursor: pointer;
 	user-select: none;
 	text-align: center;
@@ -68,7 +67,7 @@ body {
 	font-size: 1.4em;
 }
 
-#cartbtn:hover, .rmvbtn:hover, #thxbtn:hover { 
+#cartbtn:hover, .rmvbtn:hover, #thxbtn:hover {
 	background-color: #04304d;
 	color: aliceblue;
 }
@@ -91,7 +90,8 @@ body {
 }
 
 .rmvbtn {
-	width: 1.5em;
+	min-width: 1.5em;
+	height: 1.5em;
 }
 
 #totlli {
