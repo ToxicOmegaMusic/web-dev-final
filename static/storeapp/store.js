@@ -2,23 +2,23 @@ let labelbuttons = [];
 let checkspace = [];
 
 let updatebtn = function() {
-	for (let check in checkspace) {
-		if (checkspace[check].checked == true) {
-			labelbuttons[check].className = 'btn-red';
-			labelbuttons[check].innerHTML = 'Remove'
-		} else {
-			labelbuttons[check].className = 'btn-grn';
-			labelbuttons[check].innerHTML = 'Add to Cart';
-		} 
-	}
+    for (let check in checkspace) {
+        if (checkspace[check].checked == true) {
+            labelbuttons[check].className = 'btn-red';
+            labelbuttons[check].innerHTML = 'Remove'
+        } else {
+            labelbuttons[check].className = 'btn-grn';
+            labelbuttons[check].innerHTML = 'Add to Cart';
+        }
+    }
 };
 
 let builder = function() {
-	let listarea = document.querySelector('#product-list');
-	listarea.innerHTML = '';
-	let str = '';
-	for (i=0; i<stock.length; i++) {
-		str += `
+    let listarea = document.querySelector('#product-list');
+    listarea.innerHTML = '';
+    let str = '';
+    for (let i in stock) {
+        str += `
 		<li>
 			<div class="prod-title">${stock[i].name}</div>
 			<div class="shpbtnspace">
@@ -27,14 +27,13 @@ let builder = function() {
 			</div>
 			<p>$${stock[i].price}</p>
 		</li>`;
-	}
-	listarea.innerHTML = str;
-
-	labelbuttons = document.querySelectorAll('.shpbtnspace label');
-	checkspace = document.querySelectorAll('.shpbtnspace input');
-	for (let btn of checkspace) {
-		btn.addEventListener('change', updatebtn);
-	}
+    }
+    listarea.innerHTML = str;
+    labelbuttons = document.querySelectorAll('.shpbtnspace label');
+    checkspace = document.querySelectorAll('.shpbtnspace input');
+    for (let btn of checkspace) {
+        btn.addEventListener('change', updatebtn);
+    }
 };
 
 builder();

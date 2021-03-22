@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Cart</title>
-	<!-- Flask -->
-	<link rel="stylesheet" href="{{ url_for('static', filename='storeapp/main.css') }}">
-	<script defer>let result = JSON.parse('{{ result|tojson }}'); let storeurl = "{{ url_for('store') }}";</script>
-	<script src="{{ url_for('static', filename = 'storeapp/stock.js') }}" defer></script>
-	<script src="{{ url_for('static', filename = 'storeapp/cart.js') }}" defer></script>
-	<!-- Local -->
-	<!-- <link rel="stylesheet" href="../../static/storeapp/main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <!-- Flask -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='storeapp/main.css') }}">
+    <script defer>
+        let result = JSON.parse('{{ result|tojson }}');
+        let storeurl = "{{ url_for('store') }}";
+    </script>
+    <script src="{{ url_for('static', filename = 'storeapp/stock.js') }}" defer></script>
+    <script src="{{ url_for('static', filename = 'storeapp/cart.js') }}" defer></script>
+    <!-- Local -->
+    <!-- <link rel="stylesheet" href="../../static/storeapp/main.css">
 	<script defer>result = {1: "on",3: "on", 5: "on"};</script>
 	<script src="../../static/storeapp/stock.js" defer></script>
 	<script src="../../static/storeapp/cart.js" defer></script> -->
 </head>
 <body>
-	<h1>Cart</h1>
-	<ul id="cartdom"></ul>
-	<a href="{{ url_for('thx') }}" id="ckhref"><p id="ckbtn">Checkout</p></a>
+    <h1>Cart</h1>
+    <ul id="cartdom"></ul>
+    <a href="{{ url_for('thx') }}" id="cklink"><p id="ckbtn">Checkout</p></a>
 </body>
 </html>

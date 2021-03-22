@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Thank You!</title>
-	<!-- Flask -->
-	<link rel="stylesheet" href="{{ url_for('static', filename = 'storeapp/main.css') }}">
-	<!-- Local -->
-	<!-- <link rel="stylesheet" href="../../static/storeapp/main.css"> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You!</title>
+    <!-- Flask -->
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'storeapp/main.css') }}">
+    <!-- Local -->
+    <!-- <link rel="stylesheet" href="../../static/storeapp/main.css"> -->
 </head>
 <body>
-	<div id="thxdom">
-		<h1>Thank you for shopping with us today!</h1>
-		<a href="{{ url_for('store') }}"><p id="thxbtn">Return to Shop</p></a>
-	</div>
+    <div id="thxdom">
+        <h1>Thank you for shopping with us today!</h1>
+        <a href="{{ url_for('store') }}"><p id="thxbtn">Return to Shop</p></a>
+    </div>
 </body>
 </html>
