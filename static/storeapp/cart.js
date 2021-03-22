@@ -3,7 +3,7 @@ let addup = function() {
     for (item in result) {
         x += stock[item].price;
     }
-    return x;
+    return (Math.round(x * 100) / 100).toFixed(2);
 };
 
 let rmv = function(x) {
