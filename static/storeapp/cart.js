@@ -1,4 +1,4 @@
-addup = function() {
+let addup = function() {
 	let x = 0;
 	for (item in result) {
 		x += stock[item].price;
@@ -6,12 +6,12 @@ addup = function() {
 	return x;
 };
 
-rmv = function(x) {
+let rmv = function(x) {
 	delete result[x];
 	builder();
 };
 
-builder = function() {
+let builder = function() {
 	let cartdom = document.querySelector('#cartdom');
 	let ckout = document.querySelector('#ckbtn');
 	let ckhref = document.querySelector('#ckhref');
@@ -22,7 +22,7 @@ builder = function() {
 			str += `
 			<li>
 				<p><span style="font-weight: bold;">${stock[item].name}</span> - <span style="color: #29785E;">$${stock[item].price}</span></p>
-				<p class="rmvbtn" onclick="rmv(${item})">X</p>
+				<p class="rmvbtn" onclick="rmv(${item});">X</p>
 			</li>`;
 		}
 		cartdom.innerHTML = str + `<p id="totlli">Total: <span style="font-weight: bold; color: #29785E;">$${total}</span></p>`;
