@@ -35,6 +35,8 @@ let builder = function() {
 	for (let btn of checkspace) {
 		btn.addEventListener('change', updatebtn);
 	}
+
+	updatebtn();
 };
 
 builder();
