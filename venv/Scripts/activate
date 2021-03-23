@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\picki\Desktop\web-dev-final\venv"
+VIRTUAL_ENV="C:\Users\picki\Desktop\School\CSET\web-dev2\projects\web-dev-final\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
