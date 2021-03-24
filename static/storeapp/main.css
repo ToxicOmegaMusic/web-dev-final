@@ -70,7 +70,7 @@ body {
 
 .btn-grn:hover {
     background-color: #044d22;
-    color: aliceblue;
+    color: #effff4;
 }
 
 .btn-red {
@@ -78,7 +78,7 @@ body {
     user-select: none;
     text-align: center;
     color: #08090A;
-    background-color: #d61f1f;
+    background-color: #FF0526;
     border: 0.1em black solid;
     border-radius: 0.2em;
     transition: 0.2s ease-in-out;
@@ -87,7 +87,7 @@ body {
 
 .btn-red:hover {
     background-color: #4d0404;
-    color: aliceblue;
+    color: #fff9f9;
 }
 
 #cartbtn,
